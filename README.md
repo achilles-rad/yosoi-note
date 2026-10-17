@@ -1,16 +1,18 @@
-# YOSOI NOTE
+# YOSOI NOTE 1.4.0-rc.5
 
-Server preview 1.4.0-rc.4: https://yosoi-note-server.onrender.com/
+VRChatアバターの写真と使用アセットを一枚にまとめるWebアプリです。
 
-The server preview can retrieve product name, shop and thumbnail from a BOOTH product URL. Three real products were verified successfully on Render Free. Photos, notes, editing and image output stay in the browser. Free hosting may take about a minute to wake after inactivity. Some products may require manual registration.
+写真編集・13部位の接続線・アセット並び替え・Material配色6種・PNG・ブラウザ保存・ZIPバックアップに対応します。接続線を個別・全件で非表示にできます。アプリ内の「使い方」で操作説明を読めます。スマホ向け画面を追加し、Chromeを推奨します。実機検証は未実施です。
 
-Earlier static edition: https://achilles-rad.github.io/yosoi-note/
-Earlier Cloudflare experiment: https://achilles-rad.github.io/yosoi-note/preview/
+[サーバー版プレビュー](https://yosoi-note-server.onrender.com/)ではBOOTH URLから商品情報と画像を取得できます。Render無料枠を使用し、休止後の起動には時間がかかります。取得できない場合も手動登録できます。写真・編集・保存は端末内で処理します。保存は自動ではありません。端末・ブラウザ間の移行はZIPを使用してください。
 
-To move a saved note between these origins, export a project ZIP on the old site and restore it on the new site. Notes are stored per browser origin; they are not synced automatically.
+ソース配布ZIPから開発する場合は、Node.js 24以上でnpm ci、npm run build、npm startを実行します。検証はnpm run verifyとnpm run test:e2eです。
 
-Distribution files only: site/ contains static editions; server-app/ contains a built frontend and minimal Node runtime. No private references, photos, notes or credentials. Render reads the public Git URL without additional GitHub OAuth permissions. The server is a preview; process-local quotas reset on restart. No access restrictions are bypassed.
+このリポジトリのserver-appはビルド済み画面と最小限のNode.jsランタイムです。Node.js 24以上で起動できます。
 
-Asset reordering: drag list handles, use arrow keys on a handle, or use the selected row’s previous/next buttons. Manual card positions and connector endpoints are preserved. Undo/redo, cross-page moves and ZIP restoration are supported.
+```sh
+cd server-app
+npm start
+```
 
-The list uses pointer dragging for in-app browser compatibility, with edge scrolling and cancellation. Verified on Chromium, Chrome, WebKit and the in-app browser; Windows and physical touch devices remain untested.
+公開時はYOSOI_MODE=public、BOOTH_LOOKUP_ENABLED=true、VITE_BOOTH_API_BASE=/apiと、PUBLIC_ORIGINまたはRENDER_EXTERNAL_URLを設定してください。既存site/のGitHub Pages版は別の静的配布です。
