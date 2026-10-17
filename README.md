@@ -1,5 +1,7 @@
 # YOSOI NOTE 1.2.0
 
+Open the app: https://achilles-rad.github.io/yosoi-note/
+
 Browser Edition deployment files only. No application server, BOOTH API, private references, or personal photos.
 
 Enable Settings > Pages > Source: GitHub Actions. Then run Actions > Publish YOSOI NOTE > Run workflow on main.
