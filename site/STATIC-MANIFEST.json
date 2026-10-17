@@ -1,0 +1,19 @@
+{
+  "version": "1.2.0",
+  "scope": "static files only; no application server or BOOTH API",
+  "sha256": {
+    ".gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "assets/index-BjREF1h-.css": "36c2b959018fd51163a07da36d06be3e9bf4bc652ef41bdab1af41359c682ca3",
+    "assets/index-JXxxw8C1.js": "eb4a6a51d1a3593095c4259d898dc4883698fa674f3ddc68ee013a17f7f620ab",
+    "index.html": "f09279f8658ad7fa54eadb988ed6fecf4368588df4ba27a04f4d0b924b2219c8",
+    "DEPLOY_STATIC.md": "813b6a59f58444955376740707e7cc83d26385840152bf2b5255825add0c5fed",
+    "PRIVACY.md": "2e20ceae6358a1a09f74625f670fe82155dd0c5f4fa18a659252abaa065102d9",
+    "third-party-licenses/@material_material-color-utilities/LICENSE": "8ded460ad5bd3ab9082eaa2f7502cc9bb621eaff87cecc55d823f21758707cea",
+    "third-party-licenses/fflate/LICENSE": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551",
+    "third-party-licenses/idb-keyval/LICENCE": "20c27d6339619eeb3113cb865d4e98a3f559e52964fc75caea9cb5fa72674565",
+    "third-party-licenses/konva/LICENSE": "7190132c82df30243dc2ba512c9509ea3b629329b4266e9f2c3b5dbd04029613",
+    "third-party-licenses/react/LICENSE": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+    "third-party-licenses/react-dom/LICENSE": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+    "third-party-licenses/react-konva/LICENSE": "0874c25d40dcf71ff12256d30e15e59fd3e21a163c53448ea8bcbe6c03b663e4"
+  }
+}
