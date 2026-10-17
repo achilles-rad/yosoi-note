@@ -1,11 +1,9 @@
-# YOSOI NOTE 1.2.0
+# YOSOI NOTE
 
-Open the app: https://achilles-rad.github.io/yosoi-note/
+Stable Browser Edition 1.2.0: https://achilles-rad.github.io/yosoi-note/
 
-Browser Edition deployment files only. No application server, BOOTH API, private references, or personal photos.
+Experimental URL Import 1.3.0: https://achilles-rad.github.io/yosoi-note/preview/
 
-Enable Settings > Pages > Source: GitHub Actions. Then run Actions > Publish YOSOI NOTE > Run workflow on main.
+The experimental UI and Worker are implemented. Real BOOTH lookup succeeded for three products in local workerd tests, but BOOTH returned HTTP 403 for all three from deployed Cloudflare Workers. Automatic lookup is not production-ready. Manual editing remains available. No access restrictions are bypassed.
 
-This workflow deploys only site/. Your photos and saved notes stay in your browser. Export a project ZIP before changing site origin.
-
-Development TypeScript sources are managed separately. Browser JavaScript and other site files in this repository are public.
+This repository contains distribution files only. Photos, saved notes, private references, and credentials are not uploaded. The Pages workflow deploys site/ only and runs manually.
