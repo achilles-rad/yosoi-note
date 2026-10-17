@@ -1,3 +1,7 @@
+# 現在の試験版 1.3.1
+
+安定版は https://achilles-rad.github.io/yosoi-note/ 、試験版は https://achilles-rad.github.io/yosoi-note/preview/ です。試験版ではHTMLの商品情報を端末内で取り込めます。画像は別途選択します。URL自動取得はCloudflareからBOOTHへの403が未解決です。下記1.2.0の説明は初期準備時の記録です。
+
 # YOSOI NOTE — Browser Edition
 
 1.2.0は静的サイトだけで動作します。アプリ用サーバー・Render・データベースの契約は不要です。商品情報の自動取得は含みません。
