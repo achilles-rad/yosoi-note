@@ -1,4 +1,4 @@
-# YOSOI NOTE 1.4.0-rc.6
+# YOSOI NOTE 1.4.0-rc.7
 
 VRChatアバターの写真と使用アセットを一枚にまとめるWebアプリです。
 
@@ -16,3 +16,5 @@ npm start
 ```
 
 公開時はYOSOI_MODE=public、BOOTH_LOOKUP_ENABLED=true、VITE_BOOTH_API_BASE=/apiと、PUBLIC_ORIGINまたはRENDER_EXTERNAL_URLを設定してください。既存site/のGitHub Pages版は別の静的配布です。
+
+利用者の任意選択後だけGoogle Analyticsによる利用統計を計測します。集計結果は管理者のGoogleアカウントから確認し、アプリに公開の統計画面はありません。写真や入力した商品情報は計測に送りません。設定はdocs/ANALYTICS_1.4.0-rc.7.mdを参照してください。
