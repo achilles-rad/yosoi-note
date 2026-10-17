@@ -2,12 +2,10 @@
 
 Stable Browser Edition 1.2.0: https://achilles-rad.github.io/yosoi-note/
 
-Experimental Import 1.3.2: https://achilles-rad.github.io/yosoi-note/preview/
+Experimental Import 1.3.3: https://achilles-rad.github.io/yosoi-note/preview/
 
-The experiment can read product name, shop and URL from a saved BOOTH HTML page entirely in your browser. Images must be selected separately. HTML scripts and remote resources are not executed or loaded.
+Read product name, shop and URL from a saved BOOTH HTML page in your browser. Use the explicit thumbnail button to request its approved BOOTH image through Cloudflare. HTML scripts and related resources are never executed or automatically loaded. Cancelled or failed image requests retain the product draft for manual completion.
 
-Cloudflare URL lookup remains experimental: BOOTH returned HTTP 403 for all three tested products, while local workerd succeeded. Automatic URL lookup is not production-ready. No access restrictions are bypassed.
+URL-only lookup remains experimental: BOOTH returned HTTP 403 from Cloudflare. It is not production-ready. No access restrictions are bypassed.
 
 Distribution files only. Photos, notes, private references and credentials are not uploaded. Pages deploys site/ with a manually started workflow. Stable 1.2.0 files are preserved.
-
-Trial 1.3.2 supports optional image lookup after reading a saved BOOTH HTML page. URL-only lookup remains experimental and may return HTTP 403. Photos and notes stay in the browser.
