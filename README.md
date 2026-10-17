@@ -1,11 +1,12 @@
 # YOSOI NOTE
 
-Stable Browser Edition 1.2.0: https://achilles-rad.github.io/yosoi-note/
+Server preview 1.4.0-rc.2: https://yosoi-note-server.onrender.com/
 
-Experimental Import 1.3.3: https://achilles-rad.github.io/yosoi-note/preview/
+The server preview can retrieve product name, shop and thumbnail from a BOOTH product URL. Three real products were verified successfully on Render Free. Photos, notes, editing and image output stay in the browser. Free hosting may take about a minute to wake after inactivity. Some products may require manual registration.
 
-Read product name, shop and URL from a saved BOOTH HTML page in your browser. Use the explicit thumbnail button to request its approved BOOTH image through Cloudflare. HTML scripts and related resources are never executed or automatically loaded. Cancelled or failed image requests retain the product draft for manual completion.
+Earlier static edition: https://achilles-rad.github.io/yosoi-note/
+Earlier Cloudflare experiment: https://achilles-rad.github.io/yosoi-note/preview/
 
-URL-only lookup remains experimental: BOOTH returned HTTP 403 from Cloudflare. It is not production-ready. No access restrictions are bypassed.
+To move a saved note between these origins, export a project ZIP on the old site and restore it on the new site. Notes are stored per browser origin; they are not synced automatically.
 
-Distribution files only. Photos, notes, private references and credentials are not uploaded. Pages deploys site/ with a manually started workflow. Stable 1.2.0 files are preserved.
+Distribution files only: site/ contains static editions; server-app/ contains a built frontend and minimal Node runtime. No private references, photos, notes or credentials. Render reads the public Git URL without additional GitHub OAuth permissions. The server is a preview; process-local quotas reset on restart. No access restrictions are bypassed.
