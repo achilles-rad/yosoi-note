@@ -1,0 +1,1 @@
+YOSOI NOTE server runtime 1.4.0-rc.1. Built frontend and minimal Node runtime only. No reference uploads, notes, photos or credentials. Use Node 24, YOSOI_MODE=public, VITE_BOOTH_API_BASE=/api, BOOTH_LOOKUP_ENABLED=true and the service HTTPS URL via PUBLIC_ORIGIN or RENDER_EXTERNAL_URL. Free preview quota is per process, not persistent across restarts.

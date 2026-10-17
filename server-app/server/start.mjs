@@ -1,0 +1,10 @@
+import {createBoothMiddleware} from './booth.mjs';
+import {createServer} from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {resolve,extname,relative,isAbsolute} from 'node:path';
+import {serverConfig,setSecurityHeaders} from './config.mjs';
+const config=serverConfig();const root=fileURLToPath(new URL('../dist/',import.meta.url));
+const api=process.env.BOOTH_LOOKUP_ENABLED==='true'?createBoothMiddleware(undefined,{publicOrigin:config.publicOrigin}):(_req,_res,next)=>next();
+const server=createServer((req,res)=>{setSecurityHeaders(res);api(req,res,()=>{if(req.url?.split('?')[0]==='/healthz'){res.setHeader('Content-Type','application/json');res.setHeader('Cache-Control','no-store');res.end('{"status":"ok"}');return;}(async()=>{if(!['GET','HEAD'].includes(req.method)){res.writeHead(405).end();return;}try{const path=decodeURIComponent(new URL(req.url,'http://127.0.0.1').pathname);const file=resolve(root,'.'+(path==='/'?'/index.html':path));const rel=relative(root,file);if(rel.startsWith('..')||isAbsolute(rel)||rel.split(/[\\/]/).some(part=>part.startsWith('.'))){res.writeHead(403).end();return;}const bytes=await readFile(file);res.setHeader('Content-Type',({'.html':'text/html; charset=utf-8','.js':'application/javascript','.css':'text/css','.json':'application/json','.jpg':'image/jpeg','.png':'image/png','.woff2':'font/woff2'})[extname(file)]||'application/octet-stream');res.setHeader('Cache-Control',path.startsWith('/assets/')?'public, max-age=31536000, immutable':'no-cache');if(req.method==='HEAD')res.end();else res.end(bytes);}catch{res.writeHead(404).end('Not found');}})();});});
+server.requestTimeout=15000;server.headersTimeout=10000;server.timeout=30000;server.maxHeadersCount=50;server.listen(config.port,config.host,()=>console.log(`YOSOI NOTE http://${config.host}:${config.port}`));
