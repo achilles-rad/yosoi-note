@@ -1,4 +1,4 @@
-# YOSOI NOTE 1.4.0-rc.19
+# YOSOI NOTE 1.4.0-rc.20
 
 VRChatアバターの写真と使用アセットを一枚にまとめるWebアプリです。
 
