@@ -28,5 +28,35 @@
     "file": "pop-OFL.txt",
     "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansjp/OFL.txt",
     "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+  },
+  {
+    "file": "script.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/greatvibes/GreatVibes-Regular.ttf",
+    "sha256": "8d509802186f1b51572531ecf313e8098f9a5bfdfaca93f0c9b34467f9982d15"
+  },
+  {
+    "file": "script-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/greatvibes/OFL.txt",
+    "sha256": "61093a21f5e63dedf54222b3c09997e54c0fe43e3851d21386e02ddcbc246d49"
+  },
+  {
+    "file": "blackletter-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/unifrakturmaguntia/OFL.txt",
+    "sha256": "96199bf9ff12dd471a66911dee95440737b437e7f5a6fd30e9e950c16d66e8df"
+  },
+  {
+    "file": "blackletter.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/unifrakturmaguntia/UnifrakturMaguntia-Book.ttf",
+    "sha256": "d64afc0547059dd2e4a78da48bda0aba0a9901be58c7f8c201a8b2b6b4492cc8"
+  },
+  {
+    "file": "mincho.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifjp/NotoSerifJP%5Bwght%5D.ttf",
+    "sha256": "2fd527ba12b6a44ec30d796d633360da0aeba6c5d4af1304ce12bb4dc15a7dfc"
+  },
+  {
+    "file": "mincho-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifjp/OFL.txt",
+    "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
   }
 ]
