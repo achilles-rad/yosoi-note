@@ -58,5 +58,25 @@
     "file": "mincho-OFL.txt",
     "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifjp/OFL.txt",
     "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+  },
+  {
+    "file": "hachi-maru-pop.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/hachimarupop/HachiMaruPop-Regular.ttf",
+    "sha256": "78408910c8f1a2f174a279cbc1484b48b71780039eba3fe1be2bfcc5d4df3f98"
+  },
+  {
+    "file": "hachi-maru-pop-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/hachimarupop/OFL.txt",
+    "sha256": "8d3c434650e84f42ddb33e9b5929089ea51c39b231b798dacb33087d5f05d9f1"
+  },
+  {
+    "file": "eb-garamond.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf",
+    "sha256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027"
+  },
+  {
+    "file": "eb-garamond-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ebgaramond/OFL.txt",
+    "sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7"
   }
 ]
