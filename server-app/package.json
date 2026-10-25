@@ -1,6 +1,6 @@
 {
   "name": "yosoi-note-runtime",
-  "version": "1.4.0-rc.24",
+  "version": "1.4.0-rc.25",
   "private": true,
   "type": "module",
   "engines": {
