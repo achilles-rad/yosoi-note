@@ -17,7 +17,7 @@ npm start
 
 公開時はYOSOI_MODE=public、BOOTH_LOOKUP_ENABLED=true、VITE_BOOTH_API_BASE=/apiと、PUBLIC_ORIGINまたはRENDER_EXTERNAL_URLを設定してください。既存site/のGitHub Pages版は別の静的配布です。
 
-利用者の任意選択後だけGoogle Analyticsによる利用統計を計測します。集計結果は管理者のGoogleアカウントから確認し、アプリに公開の統計画面はありません。写真や入力した商品情報は計測に送りません。設定はdocs/ANALYTICS_1.4.0-rc.7.mdを参照してください。
+Render配信版は2026年10月29日にGoogle Analyticsによる利用統計の計測を廃止しました。Webアプリの写真編集・PNG出力・BOOTH商品取得などの機能は引き続き提供します。
 
 写真編集は専用タブへ統合し、小・標準・大と四隅のドラッグでサイズを変更できます。使い方に注意事項・利用条件を記載しています。Cloudflare版 https://yosoi-note.yosoi-note.workers.dev/ とRender版の両方を継続更新します。
 
