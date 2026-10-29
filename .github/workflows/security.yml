@@ -1,0 +1,30 @@
+name: Verify runtime security
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24.22.2
+      - name: Validate runtime syntax and protection headers
+        run: |
+          node --check server-app/server/start.mjs
+          node --check server-app/server/booth.mjs
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import {assertSupportedRuntime,setSecurityHeaders} from './server-app/server/config.mjs';
+          import {publicAddress} from './server-app/server/booth.mjs';
+          assertSupportedRuntime();
+          assert.throws(()=>assertSupportedRuntime('24.22.1'));
+          const headers=new Map();
+          setSecurityHeaders({setHeader:(k,v)=>headers.set(k,v)},undefined,true);
+          assert.equal(headers.get('Strict-Transport-Security'),'max-age=31536000');
+          assert.equal(headers.get('Cross-Origin-Opener-Policy'),'same-origin');
+          for(const ip of ['127.0.0.1','169.254.169.254','192.88.99.1'])assert.equal(publicAddress(ip),false);
+          JS
