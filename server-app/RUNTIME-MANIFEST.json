@@ -1,10 +1,11 @@
 {
-  "version": "1.4.0-rc.38",
+  "version": "1.4.0-rc.39",
   "sha256": {
     "README.md": "5a13924b3a7f1891b0e607f6031fb8bcceddc71e6aa68950a8f998ddcca46c4e",
     "dist/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "dist/PRIVACY.md": "429338fd6adb20c681b354a87083fea32e61f85b24c90eff50b2ec7e4a629928",
-    "dist/assets/index-CDrmWfSF.css": "033d5ed89d95c89edbf0f34e363048d0efa4b9bc76b2559a300ffc649816f4fe",
+    "dist/PRIVACY.md": "aaa5afdbd9b77720ec0fc52a083cb6ad433c1ab1ec93baa43bc0aecb379dcace",
+    "dist/assets/index-CmaLKtrG.css": "03ee28a08f2b82da64b9db2f72a97c9131aa094e661cee90227b7bfa8356ed2a",
+    "dist/assets/index-DwPFOf6x.js": "ace62a5f3746f089c0232477a733487424719e09d35cdbcbc5c2f06366c8ed34",
     "dist/assets/sample-avatar-CQUEfQ5w.png": "86d4578e4ef8c2aa548267719d54fdbfb636f46faa64539d01ec19105b8946cc",
     "dist/backgrounds/SOURCES.md": "f93c4f62a7b982e500132aaa2ae9506b081e076e729fb600da978120ab5969c1",
     "dist/backgrounds/alterwear-2026-01-thumb.jpg": "f227485b775d0150d3b99130b9f71688544024b40c1c7ca0b8b0091182106ce7",
@@ -279,7 +280,7 @@
     "dist/icons/yosoi-note-32.png": "d0f6cfe71022f0edda3cef0dd18ab88738e3e15a21a91ff124b70c540e8b9f13",
     "dist/icons/yosoi-note-512.png": "fb8c42acb91666c9c742504fb85af406d6f6452b96d37be3d01bcf4b7c980454",
     "dist/icons/yosoi-note-original.png": "457ad9bbe5828f00916180a254450d0d23fbd5583b15ad1065f44aeab0ce88e8",
-    "dist/index.html": "f081168f42950344b9862982728b9ba70849bb0ba21411b6e4801a8b6249e7b0",
+    "dist/index.html": "fa4b06d72ac78839b6bb2573d6540517602b7ddca3b20371ec0fbd0e60954f89",
     "dist/third-party-licenses/@material_material-color-utilities/LICENSE": "8ded460ad5bd3ab9082eaa2f7502cc9bb621eaff87cecc55d823f21758707cea",
     "dist/third-party-licenses/fflate/LICENSE": "0a1df3a083d0c010560aa342e87959c8c1070e6fd54545741f083f22d0c8b551",
     "dist/third-party-licenses/idb-keyval/LICENCE": "20c27d6339619eeb3113cb865d4e98a3f559e52964fc75caea9cb5fa72674565",
@@ -287,12 +288,11 @@
     "dist/third-party-licenses/react/LICENSE": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
     "dist/third-party-licenses/react-dom/LICENSE": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
     "dist/third-party-licenses/react-konva/LICENSE": "0874c25d40dcf71ff12256d30e15e59fd3e21a163c53448ea8bcbe6c03b663e4",
-    "package.json": "3eb9802dfaf00c8a779fa63b9b18e36bc443464dfda17f0baea12bdf43d43469",
+    "package.json": "e4136075c9c3e46bc2fd225272e8e058106b0017b915819b693a0655cb7dab01",
     "server/booth.mjs": "81d04475d2086f4de4ee4b2f7c5748636529a2166b78bdd38ec24e14a6082e20",
     "server/config.mjs": "688929b4a8fda76b0d104fdff646bf0bfe45801e86f814dd5d5086d6e8caa8b3",
     "server/start.mjs": "a8cd2a1ed172a3ddb4151479f836901f0aca5d508a718ea8cf5e13246a2a416b",
     "shared/booth-url.mjs": "2e7e1b9d8f417daecbfdb158c9bde62ad7b22583ab1de72cdfa67f04f00897ac",
-    "shared/product.mjs": "9608f1cdff177fd5389e74edbad46293c472a0775ae9fc59a1a0bb6eff065207",
-    "dist/assets/index-no-analytics-20261029.js": "c210661dbe3a6a5b8730e3914bba77ff33786213303516d51d01cf36cb70f006"
+    "shared/product.mjs": "9608f1cdff177fd5389e74edbad46293c472a0775ae9fc59a1a0bb6eff065207"
   }
 }
