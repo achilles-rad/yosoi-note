@@ -5,3 +5,6 @@ Original geometric patterns authored for this application on 2026-10-25. SVG sou
 ## AVATELIER series
 
 AVATELIER Vol.01–12: user-provided PNG cover artwork, added at the user’s request on 2026-10-25. Original PNG files are copied without modification. Small JPEG thumbnails are derived for the picker; full images load only upon selection. Includes existing lettering and decoration. No third-party endorsement is implied.
+
+## COVERS archive additions (2026-10-29)
+User requested addition of AVAFORM, AVA MODE, WORLDWEAR, ALTERWEAR (2026.01–12). Original PNGs copied unchanged, with small JPEG thumbnails for selection. Existing AVATELIER Vol.01–12 matched byte-for-byte and were left unchanged. Only image files were imported; folder README files were not distributed.
